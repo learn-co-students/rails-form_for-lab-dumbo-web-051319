@@ -1,0 +1,5 @@
+<h1>Students Index</h1>
+<% @students.each do |student| %>
+  <a href="/students/<%= student.id %>"> <%= student.to_s %> </a><br>
+<% end %>
+<a href="/students/new">New Student</a>
